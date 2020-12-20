@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "3cdfd2f5-ea72-42e4-a9d0-78de07ac5415",
+    "Name": "SimplecovPackage",
+    "ModifiedOnUtc": "\/Date(1608222450000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}

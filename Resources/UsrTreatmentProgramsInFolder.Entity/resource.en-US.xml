@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Лечебные программы” in Folder" />
+			<Item Name="Columns.Folder.Caption" Value="Лечебные программы” folder" />
+			<Item Name="Columns.UsrTreatmentPrograms.Caption" Value="Лечебные программы”" />
+		</Items>
+	</Group>
+</Resources>

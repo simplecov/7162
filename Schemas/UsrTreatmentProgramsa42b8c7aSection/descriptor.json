@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "fb46a19b-c632-451f-8919-3e6608e205f4",
+    "Name": "UsrTreatmentProgramsa42b8c7aSection",
+    "ModifiedOnUtc": "\/Date(1608108130000)\/",
+    "Parent": {
+      "UId": "7912fb69-4fee-429f-8b23-93943c35d66d",
+      "Name": "BaseSectionV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Section schema: \"Лечебные программы\""
+  }
+}

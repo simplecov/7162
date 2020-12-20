@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "dc6d80a1-8795-46ee-8091-1f8f930a0539",
+    "Name": "UsrTreatmentProgramsFile",
+    "ModifiedOnUtc": "\/Date(1608108137000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Лечебные программы” attachment"
+  }
+}

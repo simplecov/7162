@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Сеансы" />
+			<Item Name="Columns.UsrCost.Caption" Value="Стоимость" />
+			<Item Name="Columns.UsrDate.Caption" Value="Дата сеанса" />
+			<Item Name="Columns.UsrDuration.Caption" Value="Длительность, мин" />
+			<Item Name="Columns.UsrOperator.Caption" Value="Оператор" />
+			<Item Name="Columns.UsrSessionState.Caption" Value="Состояние сеанса" />
+			<Item Name="Columns.UsrTreatment.Caption" Value="Treatment" />
+		</Items>
+	</Group>
+</Resources>

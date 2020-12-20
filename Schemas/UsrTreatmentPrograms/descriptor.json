@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f093ec6c-8e90-4e58-9b1f-91565789a1bd",
+    "Name": "UsrTreatmentPrograms",
+    "ModifiedOnUtc": "\/Date(1608392156000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Лечебные программы"
+  }
+}

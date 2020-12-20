@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Лечебные программы" />
+			<Item Name="Columns.UsrCode.Caption" Value="Code" />
+			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
+			<Item Name="Columns.UsrIsActive.Caption" Value="Is Active" />
+			<Item Name="Columns.UsrName.Caption" Value="Name" />
+			<Item Name="Columns.UsrNotes.Caption" Value="Notes" />
+			<Item Name="Columns.UsrResponsible.Caption" Value="Responsible" />
+			<Item Name="Columns.UsrTreatmentFrequency.Caption" Value="Treatment frequency" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess3_7eea8924c43d423babc85403d7197008.Caption" Value="OnSaving" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage3_e0817a11da654ddea8ce7f2a1455c03d.Caption" Value="OnSaving" />
+			<Item Name="EventsProcessSchema.Caption" Value="Лечебные программы" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_c2f11dab67c8495d92f914ec03f1ae68.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_c2f11dab67c8495d92f914ec03f1ae68.Lanes.Lane_b74c7203176448448dce14aba268b008.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.Parameters.DcmEntityUtil.Caption" Value="DcmEntityUtil" />
+			<Item Name="EventsProcessSchema.Parameters.ProcessSchemaListeners.Caption" Value="ProcessSchemaListeners" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "ff25b26b-b1a3-4524-8e75-c3898fb1e8a4",
+    "Name": "UsrTreatmentFrequency",
+    "ModifiedOnUtc": "\/Date(1608212396000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Treatment frequency"
+  }
+}

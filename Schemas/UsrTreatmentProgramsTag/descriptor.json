@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "b7042ce1-b8ce-4e53-ac89-25cbe26768bf",
+    "Name": "UsrTreatmentProgramsTag",
+    "ModifiedOnUtc": "\/Date(1608108140000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Лечебные программы” section tag"
+  }
+}

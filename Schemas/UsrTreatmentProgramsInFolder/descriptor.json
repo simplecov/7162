@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "6788d789-71b0-4e37-ac87-0752a417c3fe",
+    "Name": "UsrTreatmentProgramsInFolder",
+    "ModifiedOnUtc": "\/Date(1608108139000)\/",
+    "Parent": {
+      "UId": "4f63bafb-e9e7-4082-b92e-66b97c14017c",
+      "Name": "BaseItemInFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Лечебные программы” in Folder"
+  }
+}
