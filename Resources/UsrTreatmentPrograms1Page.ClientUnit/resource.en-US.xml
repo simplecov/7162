@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Лечебные программы&quot;" />
+			<Item Name="LocalizableStrings.InfoActionCaption.Value" Value="Показать дату выполнения" />
 			<Item Name="LocalizableStrings.Tab408bc1beTabLabelTabCaption.Value" Value="Основная информация" />
 		</Items>
 	</Group>

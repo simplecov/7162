@@ -154,7 +154,35 @@ define("UsrTreatmentPrograms1Page", ["UsrConstsFront"], function(UsrConstsFront)
 			},
 			setUsrTreatmentFrequencyDependentValues() {
 				this.set("UsrTreatmentFrequencyIsChanged", true);
-			}
+			},
+			
+			fillSessionDetail: function() {
+                // Получение даты выполнения заказа.
+                var dueDate = this.get("DueDate");
+                // Отображение информационного окна.
+                this.showInformationDialog(dueDate);
+            },
+            // Переопределение базового виртуального метода, возвращающего коллекцию действий страницы редактирования.
+            getActions: function() {
+                // Вызывается родительская реализация метода для получения
+                // коллекции проинициализированных действий базовой страницы.
+                var actionMenuItems = this.callParent(arguments);
+                // Добавление линии-разделителя.
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    Type: "Terrasoft.MenuSeparator",
+                    Caption: ""
+                }));
+                // Добавление пункта меню в список действий страницы редактирования.
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    // Привязка заголовка пункта меню к локализуемой строке схемы.
+                    "Caption": {bindTo: "Resources.Strings.InfoActionCaption"},
+                    // Привязка метода-обработчика действия.
+                    "Tag": "fillSessionDetail",
+                    // Привязка свойства доступности пункта меню к значению, которое возвращает метод isRunning().
+                    "Enabled": true
+                }));
+                return actionMenuItems;
+            }
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
