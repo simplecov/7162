@@ -1,6 +1,14 @@
-define("UsrTreatmentPrograms1Page", ["UsrConstsFront"], function(UsrConstsFront) {
+define("UsrTreatmentPrograms1Page",
+["UsrConstsFront", "ProcessModuleUtilities"],
+function(UsrConstsFront, ProcessModuleUtilities) {
 	return {
 		entitySchemaName: "UsrTreatmentPrograms",
+		messages: {
+			"BusinessProcessCompletedReloadForm": {
+				mode: this.Terrasoft.MessageMode.BROADCAST,
+				direction: this.Terrasoft.MessageDirectionType.SUBSCRIBE
+			}
+		},
 		attributes: {
 			"UsrResponsible": {
 				lookupListConfig: {
@@ -62,6 +70,15 @@ define("UsrTreatmentPrograms1Page", ["UsrConstsFront"], function(UsrConstsFront)
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				this.setIsInitiallyDailyProgram();
+			},
+			onBusinessProcessCompletedReloadForm: function(args) {
+				//this.updateDetail({detail: "UsrTreatmentSessionDetailc0a25868"});
+				this.onReloadCard();
+			},
+			subscribeSandboxEvents: function() {
+				this.callParent(arguments);
+				this.sandbox.subscribe("BusinessProcessCompletedReloadForm", this.onBusinessProcessCompletedReloadForm,
+					this);
 			},
 			validateSessionAmount: function(callback, scope) {
 				
@@ -155,34 +172,38 @@ define("UsrTreatmentPrograms1Page", ["UsrConstsFront"], function(UsrConstsFront)
 			setUsrTreatmentFrequencyDependentValues() {
 				this.set("UsrTreatmentFrequencyIsChanged", true);
 			},
-			
 			fillSessionDetail: function() {
-                // Получение даты выполнения заказа.
-                var dueDate = this.get("DueDate");
-                // Отображение информационного окна.
-                this.showInformationDialog(dueDate);
-            },
-            // Переопределение базового виртуального метода, возвращающего коллекцию действий страницы редактирования.
-            getActions: function() {
-                // Вызывается родительская реализация метода для получения
-                // коллекции проинициализированных действий базовой страницы.
-                var actionMenuItems = this.callParent(arguments);
-                // Добавление линии-разделителя.
-                actionMenuItems.addItem(this.getButtonMenuItem({
-                    Type: "Terrasoft.MenuSeparator",
-                    Caption: ""
-                }));
-                // Добавление пункта меню в список действий страницы редактирования.
-                actionMenuItems.addItem(this.getButtonMenuItem({
-                    // Привязка заголовка пункта меню к локализуемой строке схемы.
-                    "Caption": {bindTo: "Resources.Strings.InfoActionCaption"},
-                    // Привязка метода-обработчика действия.
-                    "Tag": "fillSessionDetail",
-                    // Привязка свойства доступности пункта меню к значению, которое возвращает метод isRunning().
-                    "Enabled": true
-                }));
-                return actionMenuItems;
-            }
+				this.FillSessions();
+				this.showInformationDialog("Сеансы заполнены");
+			},
+			getActions: function() {
+				// Вызывается родительская реализация метода для получения
+				// коллекции проинициализированных действий базовой страницы.
+				var actionMenuItems = this.callParent(arguments);
+				// Добавление линии-разделителя.
+				actionMenuItems.addItem(this.getButtonMenuItem({
+					Type: "Terrasoft.MenuSeparator",
+					Caption: ""
+				}));
+				// Добавление пункта меню в список действий страницы редактирования.
+				actionMenuItems.addItem(this.getButtonMenuItem({
+					"Caption": {bindTo: "Resources.Strings.CreateSessionRecords"},
+					// Привязка метода-обработчика действия.
+					"Tag": "fillSessionDetail",
+					"Enabled": true
+				}));
+				return actionMenuItems;
+			},
+			FillSessions: function(processName) {
+				var treatmentId = this.$PrimaryColumnValue;
+				var args = {
+					sysProcessName: "UsrFillTreatmentSessionDetail",
+					parameters: {
+						UsrTreatmentId: treatmentId
+					}
+				};
+				ProcessModuleUtilities.executeProcess(args);
+			}
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[

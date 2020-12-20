@@ -36,15 +36,17 @@
 
             esq.Filters.Add(esqFilter);
 
-            var count = esq.GetEntityCollection(UserConnection)
+            var entitys = esq.GetEntityCollection(UserConnection);
+            if (entitys.Count == 0)
+            {
+                return -1;
+            }
+
+            var count = entitys
                 .FirstOrDefault()
                 .GetTypedColumnValue<int>(countColumn.Name);
 
-            var result = count > 0
-                ? count
-                : -1;
-
-            return result;
+            return count;
         }
     }
 }

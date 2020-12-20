@@ -7,7 +7,16 @@
       "A5": "a7b1a777-6f39-48b6-9a29-e04cb3fef66d",
       "B1": [],
       "B2": [],
-      "B3": [],
+      "B3": [
+        {
+          "UId": "16b6798f-56c5-445a-b80a-7edbafa91842",
+          "A2": "Terrasoft.Configuration.UsrTreatmentManagerNamespace",
+          "A3": "095f9895-3cc7-4eba-b0c7-d86c9bc1f4e7",
+          "A4": "095f9895-3cc7-4eba-b0c7-d86c9bc1f4e7",
+          "A5": "a7b1a777-6f39-48b6-9a29-e04cb3fef66d",
+          "GF1": "null"
+        }
+      ],
       "B6": "3cdfd2f5-ea72-42e4-a9d0-78de07ac5415",
       "B8": "7.16.2.1600",
       "FJ1": [
@@ -51,6 +60,7 @@
           "A5": "3cdfd2f5-ea72-42e4-a9d0-78de07ac5415",
           "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
           "BL8": "095f9895-3cc7-4eba-b0c7-d86c9bc1f4e7",
+          "BM1": 0,
           "BM4": [
             {
               "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
@@ -85,7 +95,8 @@
           "BL8": "095f9895-3cc7-4eba-b0c7-d86c9bc1f4e7",
           "BN2": "31;31",
           "BO3": true,
-          "FC1": []
+          "FC1": [],
+          "ED1": false
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
@@ -117,7 +128,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "\nreturn true;",
+          "CH1": "var treatmentId = Get<Guid>(\"UsrTreatmentId\");\nvar treatmentManager = new UsrTreatmentManager(UserConnection);\ntreatmentManager.SetTreatmentFrequenceType(treatmentId);\ntreatmentManager.CreateTreatmentSessionRecords(treatmentId);\nreturn true;",
           "CH2": true
         },
         {

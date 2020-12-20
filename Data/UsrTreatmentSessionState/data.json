@@ -1,0 +1,40 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1473e773-5309-4731-a7c4-2bba8668a0ef"
+        },
+        {
+          "SchemaColumnUId": "0c6de71f-1e90-471b-8269-b99c3fee2e70",
+          "Value": "Запланирован"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "24e49b47-c213-43fb-a3ee-9b63d1a0dae5"
+        },
+        {
+          "SchemaColumnUId": "0c6de71f-1e90-471b-8269-b99c3fee2e70",
+          "Value": "Завершён"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "73fe5edf-b9e1-49f0-b7d9-e5adf9e275ac"
+        },
+        {
+          "SchemaColumnUId": "0c6de71f-1e90-471b-8269-b99c3fee2e70",
+          "Value": "В работе"
+        }
+      ]
+    }
+  ]
+}

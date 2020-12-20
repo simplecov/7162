@@ -1,0 +1,70 @@
+﻿{
+  "Descriptor": {
+    "UId": "4f3413fa-2aed-41e0-8757-78020ed58e82",
+    "Name": "UsrTreatmentPrograms",
+    "ModifiedOnUtc": "\/Date(1608496141000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "f093ec6c-8e90-4e58-9b1f-91565789a1bd",
+      "Name": "UsrTreatmentPrograms"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "91a92409-486b-408b-afef-afdc464105bd",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrResponsible",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "61ef8271-b163-444e-8eb2-3bcb62bd033c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrName",
+        "DataTypeValueUId": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "961326ca-ef38-4b2d-a239-e3da10f6000f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrNotes",
+        "DataTypeValueUId": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
+      },
+      {
+        "ColumnUId": "90bd862c-e0c5-4195-a01b-9b0ba8d6534c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrCode",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "74414bb4-1c93-42bc-b6d2-3c84260c9ae5",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrIsActive",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "e9c8ac69-bbce-44b5-bc54-db5288c8a70c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrTreatmentFrequency",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "32121e4a-3e31-4e3a-8b4e-5a9f4de02dc9",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrComment",
+        "DataTypeValueUId": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2"
+      }
+    ]
+  }
+}

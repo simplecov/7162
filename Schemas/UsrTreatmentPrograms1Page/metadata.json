@@ -49,7 +49,7 @@
 }
 + MetaData.Schema.B2 {
   "UId": "401dad01-83de-47a2-b33b-46f5fd098c12",
-  "A2": "InfoActionCaption",
+  "A2": "CreateSessionRecords",
   "A3": "dad55e7c-cccd-4376-805d-841660991a9d",
   "A4": "dad55e7c-cccd-4376-805d-841660991a9d",
   "A5": "a7b1a777-6f39-48b6-9a29-e04cb3fef66d"

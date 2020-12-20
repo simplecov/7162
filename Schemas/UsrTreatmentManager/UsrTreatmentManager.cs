@@ -16,7 +16,7 @@
     {
         private UserConnection _userConnection;
         private List<UsrTreatmentSession> _sessionList;
-        private List<EUsrTreatmentFrequencyType> _treatmentCourse;
+        //private List<EUsrTreatmentFrequencyType> _treatmentCourse;
 
         private Guid _frequencyTypeId;
         private EUsrTreatmentFrequencyType _frequencyType;
@@ -48,18 +48,43 @@
             });
         }
 
-        public void CreateTreatmentSessionRecords( Guid treatmentId )
+        public void CreateTreatmentSessionRecords( Guid id )
         {
             SetDefaultTreatmentSessionRecordsQuantity();
 
             var date = DateTime.Now;
-
-            _treatmentCourse.ForEach(frType =>
+            _sessionList = new List<UsrTreatmentSession>();
+            int n = 0;
+            while (n < _createdRecodsQuantity)
             {
-                var session = CreateTreatmentSession(frType);
+                var session = new UsrTreatmentSession(_userConnection);
+                session.SetDefColumnValues();
+                session.UsrTreatmentId = id;
+                session.UsrDate = date;
                 _sessionList.Add(session);
-            });
-            _sessionList = new List<UsrTreatmentSession>(_createdRecodsQuantity);
+                date = ModifyDateByFrequencyType(date);
+                n++;
+            }
+
+            _sessionList.ForEach(session => session.Save());
+        }
+
+        public DateTime ModifyDateByFrequencyType(DateTime date)
+        {
+            switch (_frequencyType)
+            {
+                case EUsrTreatmentFrequencyType.Daily:
+                    return date.AddDays(1);
+
+                case EUsrTreatmentFrequencyType.Weekly:
+                    return date.AddDays(7);
+
+                case EUsrTreatmentFrequencyType.Monthly:
+                    return date.AddMonths(1);
+
+                default:
+                    return date;
+            }
         }
 
         private UsrTreatmentSession CreateTreatmentSession(EUsrTreatmentFrequencyType frequencyType)
