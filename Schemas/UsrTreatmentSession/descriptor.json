@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "f27b41cf-0eca-4686-be5c-56263060301a",
     "Name": "UsrTreatmentSession",
-    "ModifiedOnUtc": "\/Date(1608229995000)\/",
+    "ModifiedOnUtc": "\/Date(1608545365000)\/",
     "Parent": {
       "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
       "Name": "BaseEntity"

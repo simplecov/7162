@@ -2,7 +2,7 @@
 <Resources Culture="it-IT">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Detail schema: &quot;Treatment session&quot;" />
+			<Item Name="Caption" Value="Detail schema: &quot;Сеансы&quot;" />
 		</Items>
 	</Group>
 </Resources>

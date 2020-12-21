@@ -15,7 +15,6 @@ define(
 				value: true
 			}
 		},
-		// Используемые миксины.
 		mixins: {
 			ConfigurationGridUtilities: "Terrasoft.ConfigurationGridUtilities"
 		},
@@ -83,57 +82,6 @@ define(
 			}
 		}
 		]/**SCHEMA_DIFF*/,
-		methods: {
-			validateSessionAmount: function(callback, scope) {
-				let schemaName = "UsrTreatmentSession";
-				var esq = this.Ext.create("Terrasoft.EntitySchemaQuery", {
-					rootSchemaName: schemaName
-				});
-				esq.addAggregationSchemaColumn(
-					"Count",
-					Terrasoft.AggregationType.COUNT,
-					"Id",
-					Terrasoft.AggregationEvalType.DISTINCT);
-				let filter = esq.createColumnFilterWithParameter(
-					Terrasoft.ComparisonType.EQUAL,
-					"UsrTreatment",
-					this.$PrimaryColumnValue);
-				esq.filters.add("byTreatmentId", filter);
-				esq.getEntityCollection(function (result) {
-					let asd = result;
-					if (!result.success) {
-						// обработка/логирование ошибки, например
-						this.showInformationDialog("Ошибка запроса данных");
-						return;
-					}
-					// result.collection.each(function (item) {
-					// 	message += "Account name: " + item.get("AccountName") +
-					// 	" - primary contact name: " + item.get("PrimaryContactName") + "\n";
-					// });
-					// this.showInformationDialog(message);
-				}, this);
-				let result = {success: false, message: "asdasdasd"};
-				callback.call(scope, result);
-			},
-			asyncValidate: function(callback, scope) {
-				this.callParent([function(response) {
-					if (!this.validateResponse(response)) {
-						return;
-					}
-					Terrasoft.chain(
-						function(next) {
-							this.validateSessionAmount(function(response) {
-								if (this.validateResponse(response)) {
-									next();
-								}
-							}, this);
-						},
-						function(next) {
-							callback.call(scope, response);
-							next();
-						}, this);
-				}, this]);
-			},
-		}
+		methods: {}
 	};
 });

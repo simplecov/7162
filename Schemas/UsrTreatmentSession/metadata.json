@@ -75,7 +75,8 @@
   "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
   "S4": "14e93b27-1087-4cfe-99a4-c956f5aa403a",
   "E6": true,
-  "E17": "UsrSessionStateId"
+  "E17": "UsrSessionStateId",
+  "E18": "UsrSessionStateUsrName"
 }
 ~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","d8247af4-3c72-4492-9c41-6ba0f80de745","a12f94db-4e85-4a13-b614-4b6c44918fbd","dbc1ddc2-40f6-409d-83ba-cc0a8c35acc1","e5cd9184-7977-45e8-ad0d-2a61a4a72c63","589b1bff-7ed9-49f0-a0bc-73679c9cebb8","0ee44498-dcee-412f-bbe2-b451bf1dd77a"]
 = MetaData.Schema.D20.A2 "UsrTreatmentSessionEvents"

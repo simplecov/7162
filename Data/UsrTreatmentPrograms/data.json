@@ -16,7 +16,7 @@
         },
         {
           "SchemaColumnUId": "74414bb4-1c93-42bc-b6d2-3c84260c9ae5",
-          "Value": true
+          "Value": false
         },
         {
           "SchemaColumnUId": "61ef8271-b163-444e-8eb2-3bcb62bd033c",
@@ -33,8 +33,8 @@
         },
         {
           "SchemaColumnUId": "e9c8ac69-bbce-44b5-bc54-db5288c8a70c",
-          "Value": "null",
-          "DisplayValue": ""
+          "Value": "bc566ae2-e8cf-4580-882e-9d0e501f9438",
+          "DisplayValue": "Ежедневно"
         }
       ]
     },
@@ -54,7 +54,7 @@
         },
         {
           "SchemaColumnUId": "74414bb4-1c93-42bc-b6d2-3c84260c9ae5",
-          "Value": true
+          "Value": false
         },
         {
           "SchemaColumnUId": "61ef8271-b163-444e-8eb2-3bcb62bd033c",

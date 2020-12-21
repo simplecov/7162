@@ -1,0 +1,63 @@
+﻿{
+  "Descriptor": {
+    "UId": "24ed19ab-3386-4ba8-a783-8d79f1ef085b",
+    "Name": "UsrTreatmentSession",
+    "ModifiedOnUtc": "\/Date(1608549935000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "f27b41cf-0eca-4686-be5c-56263060301a",
+      "Name": "UsrTreatmentSession"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "d8247af4-3c72-4492-9c41-6ba0f80de745",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrTreatment",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "e5cd9184-7977-45e8-ad0d-2a61a4a72c63",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrCost",
+        "DataTypeValueUId": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "589b1bff-7ed9-49f0-a0bc-73679c9cebb8",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrDuration",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "a12f94db-4e85-4a13-b614-4b6c44918fbd",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrDate",
+        "DataTypeValueUId": "603d4960-a1a2-45e9-b232-206a54421b01"
+      },
+      {
+        "ColumnUId": "0ee44498-dcee-412f-bbe2-b451bf1dd77a",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrSessionState",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "dbc1ddc2-40f6-409d-83ba-cc0a8c35acc1",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrOperator",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

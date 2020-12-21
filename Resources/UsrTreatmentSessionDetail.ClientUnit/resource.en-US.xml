@@ -2,8 +2,8 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Detail schema: &quot;Treatment session&quot;" />
-			<Item Name="LocalizableStrings.Caption.Value" Value="Treatment session" />
+			<Item Name="Caption" Value="Detail schema: &quot;Сеансы&quot;" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Сеансы" />
 		</Items>
 	</Group>
 </Resources>

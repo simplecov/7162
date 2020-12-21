@@ -72,8 +72,7 @@ function(UsrConstsFront, ProcessModuleUtilities) {
 				this.setIsInitiallyDailyProgram();
 			},
 			onBusinessProcessCompletedReloadForm: function(args) {
-				//this.updateDetail({detail: "UsrTreatmentSessionDetailc0a25868"});
-				this.onReloadCard();
+				this.updateDetail({detail: "UsrTreatmentSessionDetailc0a25868"});
 			},
 			subscribeSandboxEvents: function() {
 				this.callParent(arguments);

@@ -4,12 +4,12 @@
 		<Items>
 			<Item Name="Caption" Value="Лечебные программы" />
 			<Item Name="Columns.UsrCode.Caption" Value="Code" />
-			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
-			<Item Name="Columns.UsrIsActive.Caption" Value="Is Active" />
-			<Item Name="Columns.UsrName.Caption" Value="Name" />
+			<Item Name="Columns.UsrComment.Caption" Value="Комментарий" />
+			<Item Name="Columns.UsrIsActive.Caption" Value="Активно" />
+			<Item Name="Columns.UsrName.Caption" Value="Название" />
 			<Item Name="Columns.UsrNotes.Caption" Value="Notes" />
-			<Item Name="Columns.UsrResponsible.Caption" Value="Responsible" />
-			<Item Name="Columns.UsrTreatmentFrequency.Caption" Value="Treatment frequency" />
+			<Item Name="Columns.UsrResponsible.Caption" Value="Ответственный" />
+			<Item Name="Columns.UsrTreatmentFrequency.Caption" Value="Периодичность" />
 			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess3_7eea8924c43d423babc85403d7197008.Caption" Value="OnSaving" />
 			<Item Name="EventsProcessSchema.BaseElements.StartMessage3_e0817a11da654ddea8ce7f2a1455c03d.Caption" Value="OnSaving" />
 			<Item Name="EventsProcessSchema.Caption" Value="Лечебные программы" />
